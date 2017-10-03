@@ -56,3 +56,12 @@ h1 {
   }
 }
 
+
+p, div.price_line {
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+
+  form, div {
+    display: inline;
+  }
+}
