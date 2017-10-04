@@ -12,6 +12,6 @@ class Cart < ApplicationRecord
   end
 
   def total_price
-    line_items.inject(1) { |tmp, item| tmp += (item.quantity * item.product.price) }
+    line_items.inject(0) { |tmp, item| tmp += (item.quantity * item.product.price) }
   end
 end
